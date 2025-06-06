@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>M.F. Mohammed Faayiz - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f3f4f6;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1f2937;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeDown 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    header nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.8s forwards;
+    }
+
+    section:nth-of-type(2) { animation-delay: 0.2s; }
+    section:nth-of-type(3) { animation-delay: 0.4s; }
+    section:nth-of-type(4) { animation-delay: 0.6s; }
+    section:nth-of-type(5) { animation-delay: 0.8s; }
+    section:nth-of-type(6) { animation-delay: 1s; }
+
+    h2 {
+      color: #111827;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #3b82f6;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    ul, p {
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+
+    article {
+      margin-top: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #1f2937;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="photo.jpeg" alt="M.F. Mohammed Faayiz" />
+    <h1>M.F. Mohammed Faayiz</h1>
+    <p>Software Developer | Frontend Developer | IoT Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>B.Tech IT student passionate about building scalable applications, front-end development, and AI. Strong in problem-solving, design thinking, and implementing IoT-based solutions.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, C, Java</li>
+      <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, MySQL</li>
+      <li><strong>Frameworks/Tools:</strong> GitHub, VS Code, Canva</li>
+      <li><strong>Database:</strong> MySQL, MongoDB</li>
+      <li><strong>Cloud:</strong> Microsoft Azure</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <article>
+      <h3>E-Ration Web Application</h3>
+      <p><strong>Stack:</strong> HTML, CSS, PHP, MySQL</p>
+      <p>Helps users check ration shop stock, staff status, and timings with real-time updates.</p>
+    </article>
+    <article>
+      <h3>No Due Form Generation System</h3>
+      <p><strong>Stack:</strong> HTML, CSS, JS, PHP, MySQL</p>
+      <p>Automates the clearance process and form generation to reduce manual errors.</p>
+    </article>
+    <article>
+      <h3>Food Classification AI</h3>
+      <p><strong>Stack:</strong> Python</p>
+      <p>Uses image recognition to classify food and provide nutritional analysis.</p>
+    </article>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Microsoft Azure Fundamentals (AZ-900)</li>
+      <li>Industry 4.0 & IoT – NPTEL</li>
+      <li>PHP & MySQL – Stack & Queue</li>
+      <li>Cloud Infrastructure – Oracle</li>
+      <li>Cybersecurity & JavaScript Essentials – Cisco</li>
+      <li>Data Science – Cisco Networking Academy</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:mffaayiz235@gmail.com">mffaayiz235@gmail.com</a></p>
+    <p>Phone: 7305852980</p>
+    <p>Location: Karur, Tamil Nadu</p>
+    <p>
+      <a href="https://www.linkedin.com/in/m-f-faayiz-5a914725a" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/mffaayiz235" target="_blank">GitHub</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 M.F. Mohammed Faayiz. All rights reserved.</p>
+  </footer>
+</body>
+</html>
